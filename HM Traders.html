@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <!-- firebase link -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HM Traders</title>
+  <link rel="stylesheet" href="./HM Traders.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="maindiv">
+        <div class="logo">
+          <img src="./pictures/Screenshot 2023-07-09 005645.png" alt="logo">
+        </div>
+        <div>
+          <nav class="navbar">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="./HM Traders.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="./blog.html">BLOG</a></li>
+              <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT US</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://chat.whatsapp.com/JubRuk0IMsp1ChVlID2qiV"><i
+                  class="fab fa-whatsapp" style="color: #008000;"></i></a></li>
+            <li class="list-inline-item"><a href="https://instagram.com/hm_traders2?igshid=MjEwN2IyYWYwYw=="><i
+                  class="fab fa-instagram" style="color: #ff00a2;"></i></a></li>
+            <li class="list-inline-item"><a
+                href="https://m.facebook.com/groups/738761824336380/?ref=share&mibextid=S66gvF"><i
+                  class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.tiktok.com/@hm_traders?_t=8dtmr4Ho1Nn&_r=1"><i
+                  class="fab fa-tiktok" style="color: #000000;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="display-3 mt-5">
+          HM TRADERS
+        </h1>
+        <h6 class="lead">JUST TRADE WITH VOLUME AND STRUCTURE</h6>
+        <div class="btn111">
+          <a href="https://chat.whatsapp.com/JubRuk0IMsp1ChVlID2qiV" class="btn btn-success mt-3 mb-5">Join Our
+            Community
+            <span><i class="fas fa-chevron-right"></i></span></a>
+        </div>
+      </div>
+
+      <div class="bgimg">
+        <h1 class="text-white">We Are Forex & Technical Analysis Experts.</h1>
+        <p class="text-white">Grow More Trading is a Forex & Technical Analysis platform for the people <br> of
+          all ages around the globe. We are serving people since 2019 and will <br> continue to serve you with
+          the best efforts. We are offering:</p>
+        <div class="threedots">
+          <ul class="transformleft">
+            <li>Session Trading.</li>
+            <li>Copy trading service</li>
+            <li>Technical & Fundamental.</li>
+          </ul>
+        </div>
+        <div class="btn112">
+          <a href="./blog.html" class="btn btn-success">Learn More <span><i
+                class="fa-solid fa-chevron-right text-white"></i></span></a>
+        </div>
+      </div>
+      <div class="lastpage ">
+        <div class="animatntxt mt-5">
+          <div class="numbers">
+            <div class="text" id="text2">1+</div>
+            <div class="text" id="text1">1+</div>
+          </div>
+          <div class="txtprimry">
+            <h3 class="text-primary">Trusted by over 1200+ Trade<br>Seekers, Worldwide, since 2019.</h3>
+          </div>
+        </div>
+
+        <div class="txts">
+          <h6>HAPPY TRADERS</h6>
+          <h6>SUCCESSFUL STUDENTS</h6>
+        </div>
+
+
+
+        <div id="blackline">
+          <hr class="line">
+        </div>
+
+
+        <h1 class="lastpgtxt">WHAT WE DO <span> OFFER</span></h1>
+
+        <!-- bootstrap grid -->
+
+        <div class="mainboxx">
+          <div class="boxx1">
+            <div>
+              <i id="font1" class="fa-solid fa-file-invoice-dollar" style="color: #008000;"></i>
+              <h5>Trading Course</h5>
+              <p>We provide basic to advance knowledge <br> in forex market.The sessions modes are <br> Both Physical &
+                Online.
+              </p>
+            </div>
+            <div>
+              <i id="font1" class="fa-solid fa-chart-column" style="color: #008000;"></i>
+              <h5>Copy trading Service</h5>
+              <p>We provide copy trading through exness <br> broker with best strategy & having High <br> trustable
+                score.</p>
+            </div>
+
+            <div>
+              <i id="font1" class="fa-solid fa-chart-line" style="color: #008000;"></i>
+              <h5>Forex Market Analysis</h5>
+              <p>We provide forex market analysis with <br> more than 80% accuracy, generated <br> by our experienced
+                team</p>
+            </div>
+
+          </div>
+
+          <div class="boxx2">
+            <div>
+              <i id="font1" class="fa-solid fa-signal" style="color: #008000;"></i>
+              <h5>Trade Signals</h5>
+              <p>Receive daily trading Alerts generated by <br> our Team in Forex Markets.</p>
+            </div>
+
+            <div>
+              <i id="font1" class="fa-solid fa-display" style="color: #008000;"></i>
+              <h5>Live Streams</h5>
+              <p>Stay informed with market trends. Tune <br> in to the live streams to watch me <br> discuss the
+                Technical &
+                fundamental <br> analysis apply market.
+              </p>
+            </div>
+
+            <div>
+              <i id="font1" class="fa-solid fa-hand-holding-dollar" style="color: #008000;"></i>
+              <h5>Smart Money Concept</h5>
+              <p>We provide smart money concept <br> knowledge with proper risk managment <br> & money managment</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="micbox">
+          <i id="font1" class="fa-solid fa-headset" style="color: #008000;"></i>
+          <h5>24/7 Trader Support line</h5>
+          <p>Get connected to our expert traders anytime to get assistance on your ongoing trades.</p>
+        </div>
+
+
+        <div class="premium">
+          <h2>Our Premium <span>Courses</span></h2>
+          <p>One Month Course By Professional <span>HASEEB AHMED</span> in Urdu/Pashto</p>
+          <h1>Roadmap to success</h1>
+        </div>
+
+        <hr id="scndline">
+
+        <p class="paragpg">Frist learn then earn</p>
+
+
+        <div class="maincolorbox">
+          <div class="colorbox">
+            <h1>Group Classes</h1>
+            <p>ONE MONTH COURSE (Weekly 2 classes)</p>
+            <h2>30,000</h2>
+            <p id="paralst"><span><i class="fa-regular fa-circle-check" style="color: #008000;"></i></span> Life Time
+              Community Membership</p>
+            <div class="btnaa">
+              <button type="button" class="btn btn-success btn-md w-50">Get Enrolled</button>
+            </div>
+          </div>
+        </div>
+
+
+        <h1 class="crseout">COURSE OUTLINE</h1>
+        <hr id="scndline">
+
+        <div class="main8">
+
+          <div class="center">
+            <div class="each">
+              <h2>SESSION 1</h2>
+              <ul>
+                <li>What is forex</li>
+                <li>Forex market players</li>
+                <li> What is traded in forex</li>
+                <li>How to trade it.</li>
+                <li>Demo trade your way to success</li>
+              </ul>
+            </div>
+            <div class="each">
+              <h2>SESSION 2</h2>
+              <ul>
+                <li> Introduction to charts</li>
+                <li> Types of charts</li>
+                <li> Important chart patterns</li>
+                <li> Types of candles</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="center">
+            <div class="each">
+              <h2>SESSION 3</h2>
+              <ul>
+                <li>Trend lines</li>
+                <li>How to draw</li>
+                <li>Types of trend lines</li>
+                <li>Trend channels</li>
+                <li>Types of Trend Channels</li>
+                <li>Fibonacci with trend line</li>
+                <li>Trend line breakout strategy</li>
+              </ul>
+            </div>
+            <div class="each">
+              <h2>SESSION 4</h2>
+              <ul>
+                <li>What is Support and Resistance?</li>
+                <li>Plotting Support and Resistance Levels</li>
+                <li>Types of support and resistance</li>
+                <li> Breakouts</li>
+                <li>Fibonacci with S&R</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="center">
+            <div class="each">
+              <h2>SESSION 5</h2>
+              <ul>
+                <li>What is SMC</li>
+                <li>Terminologies in SMC</li>
+                <li>Market structure(BOS/CHOCH)</li>
+                <li>Order blocks</li>
+                <li> Supply and demand</li>
+                <li>Fvg/Imbalance</li>
+
+
+              </ul>
+            </div>
+            <div class="each">
+              <h2>SESSION 6</h2>
+              <ul>
+                <li>Asian session</li>
+                <li>London session</li>
+                <li> New york session</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="center">
+            <div class="each">
+              <h2>SESSION 7</h2>
+              <ul>
+                <li>What is ICT</li>
+                <li> Market maker BUY model</li>
+                <li>Market maker SELL model</li>
+                <li>Opening gaps</li>
+                <li>Optimal trade entry</li>
+                <li>SMT Divergence</li>
+
+              </ul>
+            </div>
+            <div class="each">
+              <h2>SESSION 8</h2>
+              <ul>
+                <li>Trading plane</li>
+                <li>Create Your Own Trading System</li>
+                <li>Trade management</li>
+                <li>Risk management</li>
+                <li>Risk reward ratio(RR)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="lstdv ">
+        <div>
+          <img class="scndlogo" src="./pictures/22.png" alt="logo">
+
+          <h4 class="lstpara mt-5">Pakistan’s No.1 Online Trading & Learning Community</h4>
+
+          <ul id="lsticons" class="list-inline ">
+            <li class="list-inline-item"><a href="https://chat.whatsapp.com/JubRuk0IMsp1ChVlID2qiV"><i
+                  class="fab fa-whatsapp" style="color: #008000;"></i></a></li>
+            <li class="list-inline-item"><a href="https://instagram.com/hm_traders2?igshid=MjEwN2IyYWYwYw=="><i
+                  class="fab fa-instagram" style="color: #ff00a2;"></i></a></li>
+            <li class="list-inline-item"><a
+                href="https://m.facebook.com/groups/738761824336380/?ref=share&mibextid=S66gvF"><i
+                  class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.tiktok.com/@hm_traders?_t=8dtmr4Ho1Nn&_r=1"><i
+                  class="fab fa-tiktok" style="color: #000000;"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="whatsnmber">
+          <h1 class="gettouch">Get In Touch</h1>
+
+          <h1 class="phnoonmbr"><span>
+              <li class="list-inline-item"><a href="https://chat.whatsapp.com/JubRuk0IMsp1ChVlID2qiV"><i
+                    class="fab fa-whatsapp" style="color: #008000;"></i></a></li>
+            </span>+923401476382</h1>
+
+          <h4><span><a href="email ka link add krna ha"><i class="fa-solid fa-envelope"
+                  style="color: #008000;"></i></a></span> hmtraders09876@gmail.com</h4>
+
+        </div>
+
+       <div class="formvali">
+        <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+
+        <div class="inputdiv">
+          <input  id="email" type="text" placeholder="Your Email">
+        </div>
+    
+        <div class="inputdiv">
+            <input id="password" type="password" placeholder="Your Password">
+          </div>
+          
+          <div class="sendbutton">
+            <button onclick="formdata()">SEND <span><i class="fa-regular fa-envelope"></i></span> </button> 
+          </div>
+
+
+       </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+
+
+  <script>
+    window.onload = function () {
+      var textElement1 = document.getElementById('text1');
+      var textElement2 = document.getElementById('text2');
+      var currentNumber1 = 1;
+      var currentNumber2 = 1;
+      var endNumber1 = 800;
+      var endNumber2 = 1500;
+
+      var interval1 = setInterval(function () {
+        textElement1.textContent = currentNumber1 + '+';
+        if (currentNumber1 >= endNumber1) {
+          clearInterval(interval1);
+        }
+        currentNumber1++;
+      }, 100 / endNumber1);
+
+      var interval2 = setInterval(function () {
+        textElement2.textContent = currentNumber2 + '+';
+        if (currentNumber2 >= endNumber2) {
+          clearInterval(interval2);
+        }
+        currentNumber2++;
+      }, 100 / endNumber2);
+    };
+  </script>
+
+
+
+
+<script src="./api.js"></script>
+<script src="./script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
