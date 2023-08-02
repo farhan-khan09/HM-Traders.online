@@ -412,11 +412,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  
 
 }
 
 .colorbox {
-    height: 270px;
+    height: 300px;
     width: 900px;
 
     border: 2px solid green;
@@ -425,6 +426,16 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 10px 0px rgb(174, 172, 172);
+    padding-bottom: 30px;
+    padding-top: 10px;
+    transition: 0.5s;
+
+}
+
+.colorbox:hover{
+    box-shadow: 0px 10px 15px 10px rgb(176, 171, 171);
+    cursor: pointer;
 }
 
 .colorbox h1 {
@@ -484,8 +495,14 @@ body {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 10px 0px rgb(174, 172, 172);
     align-items: center;
+    transition: 0.5s;
+}
 
+.each:hover{
+    box-shadow: 0px 10px 15px 10px rgb(176, 171, 171);
+    cursor: pointer;
 }
 
 .each h2 {
@@ -552,10 +569,23 @@ body {
     }
 
     .maindiv {
-        height: 22vh;
+        height: 20vh;
     }
 
-    .navbar ul {
+    .maindiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .maindiv ul {
+        text-align: center;
+    }
+
+
+
+    .logo img {
         display: none;
     }
 
@@ -721,9 +751,37 @@ body {
 
     .each {
         width: 345px;
-        /* height: 200px; */
+
     }
 }
+
+@media (max-width: 345px) {
+    .each ul {
+        margin-left: 0px;
+    }
+
+    .each {
+        width: 245px;
+    }
+
+    .colorbox {
+        height: 340px;
+    }
+
+    .premium h1 {
+        font-size: 28px;
+    }
+
+    .premium p {
+        font-size: 14px;
+    }
+
+    .hmlogomain {
+        margin-left: -85px;
+    }
+}
+
+
 
 
 @media screen and (max-width: 1000px) {
@@ -800,6 +858,19 @@ body {
         transform: translateY(-20px);
     }
 
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maindiv {
+        height: 32vh;
+    }
+
+    .h1-2nd {
+        font-size: 49px;
+    }
+
 
 }
 
@@ -813,6 +884,13 @@ body {
         font-size: 16px !important;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .h1-2nd {
+        font-size: 48px;
+    }
+}
+
 
 
 .lstdv {
@@ -890,14 +968,6 @@ body {
     margin-bottom: 104px;
 }
 
-.maincontact {
-    border: 2px solid red;
-}
-
-.bgcallimg {
-    height: 200vh;
-    width: 100%;
-}
 
 
 
@@ -905,7 +975,7 @@ body {
 
 
 
-.inputdiv input{
+.inputdiv input {
     padding: 12px;
     margin-block: 8px;
     width: 100%;
@@ -916,12 +986,12 @@ body {
     color: #fff;
 }
 
-.inputdiv input::placeholder{
+.inputdiv input::placeholder {
     color: #fff;
     font-size: 15px;
 }
 
-.sendbutton button{
+.sendbutton button {
     padding: 10px 50px;
     margin-top: 10px;
     border: none;
@@ -929,3 +999,249 @@ body {
     background-color: #008000;
     color: #fff;
 }
+
+
+/* contact us */
+
+.maincontact {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bgcallimg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.wearehere {
+    color: white;
+    background-color: #008000;
+    display: flex;
+    height: 10vh;
+    font-size: 50px;
+    font-weight: 700;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+
+/* about  */
+
+
+.aboutpic {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.haseebpic {
+    height: 500px;
+    width: 360px;
+    border-radius: 15px;
+    box-shadow: -1px 8px 7px 1px rgba(0, 0, 0, 0.5);
+    margin-top: -25px;
+}
+
+.aboutpich1 {
+    color: #008000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.aboutpich5 {
+    color: #008000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mainabouthaseeb {
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    margin-bottom: 60px;
+
+}
+
+.mainabouthaseeb p {
+    font-size: 18px;
+    width: 100vh;
+    /* text-align: center; */
+    text-align: justify;
+
+}
+
+.mainabouthaseeb p span {
+    font-weight: 700;
+}
+
+.headhaseeb {
+    margin-left: 190px;
+}
+
+.iconshaseeb {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.bubbled-line {
+    height: 20px;
+    width: 100%;
+    background-color: #00ff00;
+    /* Green color */
+    position: relative;
+    overflow: hidden;
+    margin: 70px;
+    transform: translateX(-70px);
+}
+
+.bubbled-line:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
+}
+
+.bubbled-line:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
+}
+
+
+/* about us media quries */
+
+
+@media screen and (max-width: 1400px) {
+    .mainabouthaseeb {
+        gap: 75px;
+    }
+
+    .mainabouthaseeb p {
+        width: 88vh;
+    }
+}
+
+
+
+@media screen and (max-width: 1290px) {
+    .headhaseeb {
+        margin-left: 85px;
+    }
+}
+
+
+@media screen and (max-width: 1190px) {
+    .mainabouthaseeb {
+        gap: 30px;
+    }
+
+    .headhaseeb {
+        margin-left: 45px;
+    }
+
+}
+
+
+@media screen and (max-width: 1080px) {
+    .headhaseeb {
+        margin-left: 15px;
+    }
+
+    .mainabouthaseeb p {
+        width: 80vh;
+    }
+
+    .wearehere {
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-width: 995px) {
+    .mainabouthaseeb p {
+        width: 65vh;
+    }
+
+}
+
+
+
+@media screen and (max-width: 840px) {
+    .haseebpic {
+        width: 400px;
+    }
+
+    .mainabouthaseeb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
+    .haseebpic {
+        height: 470px;
+        width: 325px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .wearehere {
+        font-size: 25px;
+        height: 6vh;
+    }
+
+    .mainabouthaseeb p {
+        width: 40vh;
+    }
+}
+
+
+
+@media screen and (max-width: 365px) {
+    .haseebpic {
+        height: 400px;
+        width: 280px;
+    }
+
+    .wearehere {
+        font-size: 20px;
+        height: 4vh;
+    }
+
+    #lsticons {
+        margin-left: 102px;
+    }
+
+    .scndlogo {
+        margin-left: 80px;
+    }
+}
+
+

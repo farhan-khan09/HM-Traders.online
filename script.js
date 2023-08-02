@@ -25,6 +25,7 @@ const formdata = () => {
         .catch((error) => {
           var errorCode = error.code;
           var errorMessage = error.message;
+          window.alert(errorCode + errorMessage)
           // ..
         });
       
